@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MaPremièreApp</string>
+    <string name="text1">Mon texte en françcais</string>
+    <string name="Button1Txt">Bouton1</string>
+    <string name="Button2Txt">Notification</string>
+    <string name="text2">un second texte</string>
+    <string name="msg"> Un gros toast </string>
+    <string name="ButtonChangeActivity">changer activity</string>
+    <string name="ButtonGeo">Localisation de Londre</string>
+
+</resources>
