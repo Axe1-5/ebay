@@ -19,7 +19,7 @@
         <activity android:name=".SecondActivity" />
 
         <service
-            android:name=".GetBiersServices"
+            android:name=".GetArticles"
             android:exported="false"></service>
     </application>
 

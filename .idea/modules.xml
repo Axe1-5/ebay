@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Projet_Android.iml" filepath="$PROJECT_DIR$/Projet_Android.iml" />
+      <module fileurl="file://D:\Downloads\ebay-master\ebay\Projet_Android.iml" filepath="D:\Downloads\ebay-master\ebay\Projet_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Downloads\ebay-master\ebay\app\app.iml" filepath="D:\Downloads\ebay-master\ebay\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ebay.iml" filepath="$PROJECT_DIR$/ebay.iml" />
     </modules>
   </component>
 </project>

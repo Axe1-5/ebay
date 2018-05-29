@@ -36,7 +36,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void clickButtonGeo(View view){
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=Londre")));
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0?q=eBay, Heron Square, Richmond, Royaume-Uni")));
     }
 
 

@@ -35,9 +35,9 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String POKEMON_UPDATE = "com.octip.cours.inf4042_11.BIERS_UPDATE";
+    public static final String ARTICLE_UPDATE = "com.octip.cours.inf4042_11.BIERS_UPDATE";
     private DatePickerDialog dpd = null;
-    private PokemonAdapter pokeAdapt;
+    private ArticleAdapter pokeAdapt;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -81,15 +81,15 @@ public class MainActivity extends AppCompatActivity {
         dpd= new DatePickerDialog(this,odsl,2018,10,5);
 
         //Services & Threading
-        IntentFilter intentFilter = new IntentFilter(POKEMON_UPDATE);
+        IntentFilter intentFilter = new IntentFilter(ARTICLE_UPDATE);
         LocalBroadcastManager.getInstance(this).registerReceiver(new PokemonUpdate(),intentFilter);
 
-        GetBiersServices.startActionBiers(this);
+        GetArticles.startActionBiers(this);
 
         //Recycler View
         RecyclerView rv = findViewById(R.id.rv_pokemon);
         rv.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
-        pokeAdapt= new PokemonAdapter(getPokemonsFromFile());
+        pokeAdapt= new ArticleAdapter(getPokemonsFromFile());
         rv.setAdapter(pokeAdapt);
 
 

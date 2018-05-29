@@ -6,16 +6,16 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.akiya.myfirstapp.MainActivity">
+    tools:context="org.esiea.patel_verrier.ebay.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text1" />
+        android:text="Bienvenue sur Ebay !" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Button1Txt"
+        android:text="Afficher l'agenda"
         android:onClick="clickButton1"/>
     <Button
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ButtonChangeActivity"
+        android:text="Change Activity : Localiser Ebay"
         android:onClick="clickButton3"/>
     <TextView
         android:id="@id/textView"

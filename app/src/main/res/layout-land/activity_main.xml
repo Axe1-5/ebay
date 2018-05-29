@@ -10,7 +10,7 @@
         android:layout_above="@+id/button1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="23dp"
-        android:text="@string/text1" />
+        android:text="Bienvenue sur Ebay !" />
 
     <Button
         android:id="@+id/button1"
@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/Button1Txt"
+        android:text="Afficher l'agenda"
         android:onClick="clickButton1"/>
 
     <TextView
@@ -37,6 +37,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
         android:onClick="clickButton3"
-        android:text="@string/ButtonChangeActivity" />
+        android:text="Change activity : Localiser Ebay" />
 
 </RelativeLayout>

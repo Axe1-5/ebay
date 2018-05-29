@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">MyFirstApp</string>
-    <string name="text1">HeLLo World!</string>
-    <string name="Button1Txt">Button1</string>
+    <string name="app_name">EbayENG</string>
+    <string name="text1">Welcome on Ebay !</string>
+    <string name="Button1Txt">Show agenda</string>
     <string name="Button2Txt">Notification</string>
     <string name="text2">a second text</string>
-    <string name="msg"> A big toast </string>
-    <string name="ButtonChangeActivity">Change activity</string>
-    <string name="ButtonGeo">London localisation</string>
+    <string name="msg"> Whe are open everyday of the year ! </string>
+    <string name="ButtonChangeActivity">Change activity : Localisation of Ebay</string>
+    <string name="ButtonGeo">Ebay localisation</string>
 </resources>
