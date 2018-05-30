@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.toast_me:
-                Toast.makeText(this, "toast", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "Vous êtes bien sur Ebay", Toast.LENGTH_SHORT)
                         .show();
                 break;
             case R.id.settings:
