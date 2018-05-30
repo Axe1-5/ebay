@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String ARTICLE_UPDATE = "com.octip.cours.inf4042_11.BIERS_UPDATE";
     private DatePickerDialog dpd = null;
-    private ArticleAdapter pokeAdapt;
+    private ArticleAdapter ArtAdapt;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -82,15 +82,15 @@ public class MainActivity extends AppCompatActivity {
 
         //Services & Threading
         IntentFilter intentFilter = new IntentFilter(ARTICLE_UPDATE);
-        LocalBroadcastManager.getInstance(this).registerReceiver(new PokemonUpdate(),intentFilter);
+        LocalBroadcastManager.getInstance(this).registerReceiver(new ArticleUpdate(),intentFilter);
 
         GetArticles.startActionBiers(this);
 
         //Recycler View
-        RecyclerView rv = findViewById(R.id.rv_pokemon);
+        RecyclerView rv = findViewById(R.id.rv_article);
         rv.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
-        pokeAdapt= new ArticleAdapter(getPokemonsFromFile());
-        rv.setAdapter(pokeAdapt);
+        ArtAdapt= new ArticleAdapter(getArticlesFromFile());
+        rv.setAdapter(ArtAdapt);
 
 
 
@@ -126,9 +126,9 @@ public class MainActivity extends AppCompatActivity {
         manager.notify(1,notifBuilder.build());
     }
 
-    public JSONArray getPokemonsFromFile(){
+    public JSONArray getArticlesFromFile(){
         try {
-            InputStream is = new FileInputStream(getCacheDir() + "/" + "pokemon.json");
+            InputStream is = new FileInputStream(getCacheDir() + "/" + "articles.json");
             byte[] buffer = new byte[is.available()];
             is.read(buffer);
             is.close();
@@ -143,11 +143,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public class PokemonUpdate extends BroadcastReceiver {
+    public class ArticleUpdate extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent){
             Log.d("tag",intent.getAction() + "  recu");
-            pokeAdapt.setNewPokemon(getPokemonsFromFile());
+            ArtAdapt.setNewArticle(getArticlesFromFile());
         }
     }
 }
