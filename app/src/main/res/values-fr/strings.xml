@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">EbayFR</string>
-    <string name="text1">Mon texte en français</string>
+    <string name="text1">Bienvenue sur Ebay !</string>
     <string name="Button1Txt">Afficher l agenda</string>
     <string name="Button2Txt">Notification</string>
     <string name="text2">un second texte</string>
