@@ -1,4 +1,4 @@
-package com.akiya.myfirstapp;
+package org.esiea.patel_verrier.ebay;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.akiya.myfirstapp", appContext.getPackageName());
+        assertEquals("org.esiea.patel_verrier.ebay", appContext.getPackageName());
     }
 }
